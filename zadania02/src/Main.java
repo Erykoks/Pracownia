@@ -111,6 +111,17 @@ void main() {
     System.out.println("Czy jestes pelnoletni? " + pelnoletni);
 
 
+    //8
+    System.out.print("Podaj rok: ");
+    int rok = sc.nextInt();
+
+    if ((rok % 4 == 0 && rok % 100 != 0) || rok % 400 == 0) {
+        System.out.println("Podany rok jest przestepny");
+    } else {
+        System.out.println("Podany rok nie jest przestepny");
+    }
+
+
 
 
     System.out.println(nazwa);
