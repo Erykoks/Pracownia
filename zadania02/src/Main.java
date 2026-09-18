@@ -90,6 +90,20 @@ void main() {
         default -> "Nieprawidlowy numer miesiaca";
     };
 
+    //6
+    System.out.print("Podaj imie: ");
+    String imie = sc.next();
+
+    String mojeImie = "Jakub";
+
+    if (imie.equalsIgnoreCase(mojeImie)) {
+        System.out.println("Masz takie samo imie jak ja");
+    } else {
+        System.out.println("Masz inne imie niz ja");
+    }
+
+
+
     System.out.println(nazwa);
 
 
