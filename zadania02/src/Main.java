@@ -142,6 +142,47 @@ void main() {
 
 
 
+    //10
+    double cena;
+    int raty;
+
+    while (true) {
+        System.out.print("Podaj cene towaru (100 - 10000 zl): ");
+        cena = sc.nextDouble();
+
+        if (cena >= 100 && cena <= 10000) {
+            break;
+        }
+
+        System.out.println("Bledna cena! Podaj ponownie.");
+    }
+
+    while (true) {
+        System.out.print("Podaj liczbe rat (6 - 48): ");
+        raty = sc.nextInt();
+
+        if (raty >= 6 && raty <= 48) {
+            break;
+        }
+
+        System.out.println("Bledna liczba rat! Podaj ponownie.");
+    }
+
+    double oprocentowanie;
+
+    if (raty >= 6 && raty <= 12) {
+        oprocentowanie = 0.025;
+    } else if (raty >= 13 && raty <= 24) {
+        oprocentowanie = 0.05;
+    } else {
+        oprocentowanie = 0.10;
+    }
+
+    double kwotaZOdsetkami = cena + (cena * oprocentowanie);
+    double rata = kwotaZOdsetkami / raty;
+
+    System.out.println("Miesieczna rata wynosi: " + rata + " zl");
+
 
 
     System.out.println(nazwa);
