@@ -33,5 +33,19 @@ void main() {
         System.out.println("Z twoich liczb nie można zbudować trójkąta");
     }
 
+    //3
+    System.out.print("Podaj liczbe: ");
+    int a = sc.nextInt();
+
+    System.out.print("Podaj liczbe: ");
+    int b = sc.nextInt();
+
+    if (a > b) {
+        System.out.println("Większe jest: " + a);
+    } else if (b > a) {
+        System.out.println("Większe jest: " + b);
+    } else {
+        System.out.println("Liczby są równe");
+    }
 
 }
