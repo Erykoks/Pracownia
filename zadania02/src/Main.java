@@ -102,6 +102,15 @@ void main() {
         System.out.println("Masz inne imie niz ja");
     }
 
+    //7
+    System.out.print("Podaj swoj wiek: ");
+    int wiek = sc.nextInt();
+
+    boolean pelnoletni = wiek >= 18 ? true : false;
+
+    System.out.println("Czy jestes pelnoletni? " + pelnoletni);
+
+
 
 
     System.out.println(nazwa);
