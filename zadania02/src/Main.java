@@ -187,6 +187,42 @@ void main() {
 
     System.out.println(nazwa);
 
+    //11
+    System.out.println("Prosty kalkulator");
+
+    System.out.print("Podaj pierwsza liczbe: ");
+    double liczba1 = sc.nextDouble();
+
+    System.out.print("Podaj symbol operacji (+, -, *, /): ");
+    char operacja = sc.next().charAt(0);
+
+    System.out.print("Podaj druga liczbe: ");
+    double liczba2 = sc.nextDouble();
+
+    switch (operacja) {
+        case '+':
+            System.out.println("Wynik: " + (liczba1 + liczba2));
+            break;
+
+        case '-':
+            System.out.println("Wynik: " + (liczba1 - liczba2));
+            break;
+
+        case '*':
+            System.out.println("Wynik: " + (liczba1 * liczba2));
+            break;
+
+        case '/':
+            if (liczba2 == 0) {
+                System.out.println("Nie mozna dzielic przez zero");
+            } else {
+                System.out.println("Wynik: " + (liczba1 / liczba2));
+            }
+            break;
+
+        default:
+            System.out.println("Bledny symbol operacji");
+    }
 
 
 }
