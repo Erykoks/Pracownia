@@ -170,3 +170,20 @@ public class Main {
             }
         }
 
+        // ZADANIE 8
+
+        System.out.println("\nPodaj liczbę do obliczenia silni:");
+        int liczba8 = scanner.nextInt();
+
+        if (liczba8 < 0) {
+            System.out.println("Silnia jest zdefiniowana dla liczb nieujemnych.");
+        } else {
+            long silnia = 1;
+
+            for (int i = 1; i <= liczba8; i++) {
+                silnia *= i;
+            }
+
+            System.out.println("Silnia liczby " + liczba8 + " wynosi: " + silnia);
+        }
+
