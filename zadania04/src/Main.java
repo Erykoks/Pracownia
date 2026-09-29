@@ -50,3 +50,15 @@ public class Main {
         System.out.println("Największa liczba: " + najwieksza);
         System.out.println();
 
+        // ZADANIE 3
+
+        System.out.println("ZADANIE 3");
+
+        String[] napisy = {"Ala", "ma", "kota", "Java", "IntelliJ"};
+
+        for (String napis : napisy) {
+            System.out.println(napis.toUpperCase());
+        }
+
+        System.out.println();
+
