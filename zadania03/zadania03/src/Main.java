@@ -39,3 +39,17 @@ public class Main {
             }
         }
 
+        // ZADANIE 3
+
+        System.out.println("\nPodawaj liczby, aby zakończyć wpisz 0:");
+
+        int suma = 0;
+        int liczba3;
+
+        do {
+            liczba3 = scanner.nextInt();
+            suma += liczba3;
+        } while (liczba3 != 0);
+
+        System.out.println("Suma podanych liczb: " + suma);
+
