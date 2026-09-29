@@ -146,5 +146,23 @@ public class Main {
         }
 
         System.out.println();
+        
+        // ZADANIE 7
+
+        System.out.println("ZADANIE 7");
+
+        String[] tablica1 = {"Ala", "ma", "kota"};
+        String[] tablica2 = {"Ala", "ma", "kota"};
+
+        boolean takieSame = Arrays.equals(tablica1, tablica2);
+
+        if (takieSame) {
+            System.out.println("Tablice są takie same.");
+        } else {
+            System.out.println("Tablice nie są takie same.");
+        }
+
+        System.out.println();
+
 
     }}
