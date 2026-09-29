@@ -62,3 +62,63 @@ public class Main {
 
         System.out.println();
 
+        // ZADANIE 4
+
+        System.out.println("ZADANIE 4");
+
+        String[] slowa = new String[5];
+
+        System.out.println("Podaj 5 słów:");
+
+        for (int i = 0; i < slowa.length; i++) {
+            slowa[i] = scanner.next();
+        }
+
+        System.out.println("Słowa od ostatniego do pierwszego, odwrócone:");
+
+        for (int i = slowa.length - 1; i >= 0; i--) {
+
+            for (int j = slowa[i].length() - 1; j >= 0; j--) {
+                System.out.print(slowa[i].charAt(j));
+            }
+
+            System.out.println();
+        }
+
+        System.out.println();
+
+        // ZADANIE 5
+
+        System.out.println("ZADANIE 5");
+
+        int[] liczbyDoSortowania = new int[8];
+
+        System.out.println("Podaj 8 liczb:");
+
+        for (int i = 0; i < liczbyDoSortowania.length; i++) {
+            liczbyDoSortowania[i] = scanner.nextInt();
+        }
+
+        // Sortowanie rosnąco
+        for (int i = 0; i < liczbyDoSortowania.length - 1; i++) {
+
+            for (int j = 0; j < liczbyDoSortowania.length - 1 - i; j++) {
+
+                if (liczbyDoSortowania[j] > liczbyDoSortowania[j + 1]) {
+
+                    int pomocnicza = liczbyDoSortowania[j];
+                    liczbyDoSortowania[j] = liczbyDoSortowania[j + 1];
+                    liczbyDoSortowania[j + 1] = pomocnicza;
+                }
+            }
+        }
+
+        System.out.println("Posortowana tablica:");
+
+        for (int liczba : liczbyDoSortowania) {
+            System.out.print(liczba + " ");
+        }
+
+        System.out.println();
+        System.out.println();
+
