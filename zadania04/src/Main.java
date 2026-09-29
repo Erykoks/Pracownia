@@ -146,7 +146,7 @@ public class Main {
         }
 
         System.out.println();
-        
+
         // ZADANIE 7
 
         System.out.println("ZADANIE 7");
@@ -162,6 +162,78 @@ public class Main {
             System.out.println("Tablice nie są takie same.");
         }
 
+        System.out.println();
+
+        // ZADANIE 8
+
+        System.out.println("ZADANIE 8");
+
+        Random random = new Random();
+
+        int[] tablicaLosowa = new int[10];
+
+        // Wypełnienie tablicy liczbami od -10 do 10
+        for (int i = 0; i < tablicaLosowa.length; i++) {
+            tablicaLosowa[i] = random.nextInt(21) - 10;
+        }
+
+        System.out.println("Zawartość tablicy:");
+
+        for (int liczba : tablicaLosowa) {
+            System.out.print(liczba + " ");
+        }
+
+        System.out.println();
+
+        // Szukanie najmniejszego i największego elementu
+
+        int minimum = tablicaLosowa[0];
+        int maksimum = tablicaLosowa[0];
+
+        int suma = 0;
+
+        for (int liczba : tablicaLosowa) {
+
+            if (liczba < minimum) {
+                minimum = liczba;
+            }
+
+            if (liczba > maksimum) {
+                maksimum = liczba;
+            }
+
+            suma += liczba;
+        }
+
+        double srednia = (double) suma / tablicaLosowa.length;
+
+        int mniejsze = 0;
+        int wieksze = 0;
+
+        for (int liczba : tablicaLosowa) {
+
+            if (liczba < srednia) {
+                mniejsze++;
+            }
+
+            if (liczba > srednia) {
+                wieksze++;
+            }
+        }
+
+        System.out.println("Najmniejszy element: " + minimum);
+        System.out.println("Największy element: " + maksimum);
+        System.out.println("Średnia arytmetyczna: " + srednia);
+        System.out.println("Elementów mniejszych od średniej: " + mniejsze);
+        System.out.println("Elementów większych od średniej: " + wieksze);
+
+        System.out.println("Tablica od końca:");
+
+        for (int i = tablicaLosowa.length - 1; i >= 0; i--) {
+            System.out.print(tablicaLosowa[i] + " ");
+        }
+
+        System.out.println();
         System.out.println();
 
 
