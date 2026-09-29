@@ -187,3 +187,27 @@ public class Main {
             System.out.println("Silnia liczby " + liczba8 + " wynosi: " + silnia);
         }
 
+        // ZADANIE 10
+
+        System.out.println("\nZADANIE 10:");
+
+        petlaGlowna:
+        for (int i = 1; i <= 10; i++) {
+            if (i % 2 != 0) {
+                continue;
+            }
+
+            for (int j = 1; j <= 10; j++) {
+                System.out.print(j + " ");
+
+                if (j > i) {
+                    continue petlaGlowna;
+                }
+            }
+
+            System.out.println();
+        }
+
+        scanner.close();
+    }
+}
