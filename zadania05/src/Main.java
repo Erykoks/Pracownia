@@ -29,6 +29,11 @@ public class Main {
         return liczba % 3 == 0 && liczba % 5 == 0;
     }
 
+    // ZADANIE 6
+    public static int doTrzeciejPotegi(int liczba) {
+        return liczba * liczba * liczba;
+    }
+
 
 
 }
