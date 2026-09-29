@@ -114,3 +114,38 @@ public class Main {
             }
         } while (zgadnieta != wylosowana);
 
+        // ZADANIE 6
+
+        System.out.println("\nPodaj znak wypełnienia prostokąta:");
+        char znak = scanner.next().charAt(0);
+
+        System.out.println("Podaj pozycję lewego górnego rogu x:");
+        int x = scanner.nextInt();
+
+        System.out.println("Podaj pozycję lewego górnego rogu y:");
+        int y = scanner.nextInt();
+
+        System.out.println("Podaj długość boku a:");
+        int a = scanner.nextInt();
+
+        System.out.println("Podaj długość boku b:");
+        int b = scanner.nextInt();
+
+        System.out.println("\nProstokąt:");
+
+        for (int i = 1; i < y; i++) {
+            System.out.println();
+        }
+
+        for (int i = 0; i < b; i++) {
+            for (int j = 1; j < x; j++) {
+                System.out.print(" ");
+            }
+
+            for (int j = 0; j < a; j++) {
+                System.out.print(znak);
+            }
+
+            System.out.println();
+        }
+
