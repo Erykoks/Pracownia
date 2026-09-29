@@ -19,5 +19,10 @@ public class Main {
         System.out.println("Różnica: " + (liczba1 - liczba2));
         System.out.println("Iloczyn: " + (liczba1 * liczba2));
     }
-    
+    // ZADANIE 4
+    public static boolean czyParzysta(int liczba) {
+        return liczba % 2 == 0;
+    }
+
+
 }
