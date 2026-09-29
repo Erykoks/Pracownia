@@ -24,5 +24,11 @@ public class Main {
         return liczba % 2 == 0;
     }
 
+    // ZADANIE 5
+    public static boolean czyPodzielnaPrzez3i5(int liczba) {
+        return liczba % 3 == 0 && liczba % 5 == 0;
+    }
+
+
 
 }
