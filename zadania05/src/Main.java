@@ -34,6 +34,11 @@ public class Main {
         return liczba * liczba * liczba;
     }
 
+    // ZADANIE 7
+    public static double pierwiastek(double liczba) {
+        return Math.sqrt(liczba);
+    }
+
 
 
 }
