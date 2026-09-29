@@ -22,4 +22,20 @@ public class Main {
                 }
             }
         }
-        
+
+        // ZADANIE 2
+
+        System.out.print("\n\nPodaj dodatnią liczbę całkowitą: ");
+        int n = scanner.nextInt();
+
+        if (n <= 0) {
+            System.out.println("Podana liczba musi być dodatnia.");
+        } else {
+            int potega = 1;
+
+            while (potega <= n) {
+                System.out.println(potega);
+                potega *= 2;
+            }
+        }
+
