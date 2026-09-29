@@ -33,6 +33,7 @@ public class Main {
         System.out.println();
         System.out.println();
 
+
         // ZADANIE 2
 
         System.out.println("ZADANIE 2");
@@ -50,6 +51,7 @@ public class Main {
         System.out.println("Największa liczba: " + najwieksza);
         System.out.println();
 
+
         // ZADANIE 3
 
         System.out.println("ZADANIE 3");
@@ -61,6 +63,7 @@ public class Main {
         }
 
         System.out.println();
+
 
         // ZADANIE 4
 
@@ -86,6 +89,7 @@ public class Main {
         }
 
         System.out.println();
+
 
         // ZADANIE 5
 
@@ -122,6 +126,7 @@ public class Main {
         System.out.println();
         System.out.println();
 
+
         // ZADANIE 6
 
         System.out.println("ZADANIE 6");
@@ -147,6 +152,7 @@ public class Main {
 
         System.out.println();
 
+
         // ZADANIE 7
 
         System.out.println("ZADANIE 7");
@@ -163,6 +169,7 @@ public class Main {
         }
 
         System.out.println();
+
 
         // ZADANIE 8
 
@@ -237,4 +244,40 @@ public class Main {
         System.out.println();
 
 
-    }}
+        // ZADANIE 9
+
+        System.out.println("ZADANIE 9");
+
+        int[] tablica20 = new int[20];
+
+        // Wypełnienie tablicy liczbami od 1 do 10
+        for (int i = 0; i < tablica20.length; i++) {
+            tablica20[i] = random.nextInt(10) + 1;
+        }
+
+        System.out.println("Zawartość tablicy:");
+
+        for (int liczba : tablica20) {
+            System.out.print(liczba + " ");
+        }
+
+        System.out.println();
+        System.out.println("Liczba wystąpień:");
+
+        for (int i = 1; i <= 10; i++) {
+
+            int ile = 0;
+
+            for (int liczba : tablica20) {
+
+                if (liczba == i) {
+                    ile++;
+                }
+            }
+
+            System.out.println(i + " -> " + ile);
+        }
+
+        scanner.close();
+    }
+}
