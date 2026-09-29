@@ -94,3 +94,23 @@ public class Main {
             System.out.println("Średnia arytmetyczna: " + srednia);
         }
 
+        // ZADANIE 5
+
+        Random random = new Random();
+        int wylosowana = random.nextInt(100) + 1;
+        int zgadnieta;
+
+        System.out.println("\nZgadnij liczbę od 1 do 100:");
+
+        do {
+            zgadnieta = scanner.nextInt();
+
+            if (zgadnieta > wylosowana) {
+                System.out.println("Podałeś za dużą wartość");
+            } else if (zgadnieta < wylosowana) {
+                System.out.println("Podałeś za małą wartość");
+            } else {
+                System.out.println("Gratulacje");
+            }
+        } while (zgadnieta != wylosowana);
+
