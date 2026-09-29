@@ -33,3 +33,20 @@ public class Main {
         System.out.println();
         System.out.println();
 
+        // ZADANIE 2
+
+        System.out.println("ZADANIE 2");
+
+        int[] liczby = {5, 12, 3, 27, 8, 15};
+
+        int najwieksza = liczby[0];
+
+        for (int i = 1; i < liczby.length; i++) {
+            if (liczby[i] > najwieksza) {
+                najwieksza = liczby[i];
+            }
+        }
+
+        System.out.println("Największa liczba: " + najwieksza);
+        System.out.println();
+
