@@ -8,4 +8,16 @@ public class Main {
         return 20;
     }
 
+    // ZADANIE 2
+    public static String zwrocImie() {
+        return "Eryk";
+    }
+
+    // ZADANIE 3
+    public static void obliczenia(int liczba1, int liczba2) {
+        System.out.println("Suma: " + (liczba1 + liczba2));
+        System.out.println("Różnica: " + (liczba1 - liczba2));
+        System.out.println("Iloczyn: " + (liczba1 * liczba2));
+    }
+    
 }
