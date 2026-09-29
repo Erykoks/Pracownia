@@ -122,3 +122,29 @@ public class Main {
         System.out.println();
         System.out.println();
 
+        // ZADANIE 6
+
+        System.out.println("ZADANIE 6");
+
+        int[] liczbyDoSilni = new int[5];
+
+        System.out.println("Podaj 5 liczb:");
+
+        for (int i = 0; i < liczbyDoSilni.length; i++) {
+            liczbyDoSilni[i] = scanner.nextInt();
+        }
+
+        for (int liczba : liczbyDoSilni) {
+
+            long silnia = 1;
+
+            for (int i = 1; i <= liczba; i++) {
+                silnia = silnia * i;
+            }
+
+            System.out.println(liczba + "! = " + silnia);
+        }
+
+        System.out.println();
+
+    }}
