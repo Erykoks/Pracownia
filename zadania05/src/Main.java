@@ -56,5 +56,28 @@ public class Main {
         return tekst.charAt(tekst.length() - 1);
     }
 
+    // Zadanie 10
+    public static boolean czyPalindrom(String tekst) {
+        tekst = tekst.toLowerCase();
+
+        String odwrocony = new StringBuilder(tekst)
+                .reverse()
+                .toString();
+
+        return tekst.equals(odwrocony);
+    }
+
+    // Zadanie 11
+    public static int sumaTablicy(int[] tablica) {
+        int suma = 0;
+
+        for (int liczba : tablica) {
+            suma += liczba;
+        }
+
+        return suma;
+    }
+
+
 
 }
