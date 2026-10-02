@@ -78,6 +78,19 @@ public class Main {
         return suma;
     }
 
+    // Zadanie 12
+    public static int zliczWystapienia(String tekst, char znak) {
+        int licznik = 0;
+
+        for (int i = 0; i < tekst.length(); i++) {
+            if (tekst.charAt(i) == znak) {
+                licznik++;
+            }
+        }
+
+        return licznik;
+    }
+
 
 
 }
