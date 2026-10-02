@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/5ci_gr2.iml" filepath="$PROJECT_DIR$/.idea/5ci_gr2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zadania02/zadania02.iml" filepath="$PROJECT_DIR$/zadania02/zadania02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zadania03/zadania03.iml" filepath="$PROJECT_DIR$/zadania03/zadania03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zadania04/zadania04.iml" filepath="$PROJECT_DIR$/zadania04/zadania04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zadania05/zadania05.iml" filepath="$PROJECT_DIR$/zadania05/zadania05.iml" />
+    </modules>
+  </component>
+</project>

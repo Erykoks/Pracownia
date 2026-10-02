@@ -51,6 +51,10 @@ public class Main {
         }
     }
 
+    // Zadanie 9
+    public static char ostatniZnak(String tekst) {
+        return tekst.charAt(tekst.length() - 1);
+    }
 
 
 }
